@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Juan Jose",
+        "surname": "Sanz",
+        "age": 24,
+        "email": "juanjosesanzlopez@gmail.com",
+        "email2": "juasanlop2@alu.edu.gva.es"
+    },
+    {
+        "name": "Juan Miguel",
+        "surname": "",
+        "age": 21,
+        "email": "",
+        "email2": ""
+    },
+    {
+        "name": "Miguel",
+        "surname": "",
+        "age": 20,
+        "email": "",
+        "email2": ""
+    }
+]
