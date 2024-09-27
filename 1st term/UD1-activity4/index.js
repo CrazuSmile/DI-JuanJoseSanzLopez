@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-let users;
+var users;
 
 fs.readFile('./persons.json', function (err, data) {
     //Check for errors
