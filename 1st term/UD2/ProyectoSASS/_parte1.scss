@@ -1,0 +1,16 @@
+@mixin caja_personalizda($fondo: white, $color: green) {
+    background-color: $fondo;
+    border: 4px solid black;
+    box-shadow: 0px 0px 2px black;
+    color: $color;
+    margin: 20px;
+    width: 600px/ 1000px*100%;
+}
+
+.caja1 {
+    @include caja_personalizda();
+}
+
+.caja2 {
+    @include caja_personalizda($fondo: gray, $color: red);
+}
