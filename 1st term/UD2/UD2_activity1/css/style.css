@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap");
+body {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+header {
+  background: gray;
+  margin: 0px;
+  padding: 1%;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+}
+header h2 {
+  font-weight: 700;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  float: left;
+  width: 10%;
+}
+
+nav {
+  background: gray;
+  padding-left: 8%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style: none;
+}
+nav li {
+  padding: 1%;
+}
+nav a:hover {
+  color: red;
+  font-weight: 700;
+}
+
+section {
+  height: 20em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer div {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  padding-left: 8%;
+}
+footer div img {
+  width: 3em;
+}
+footer p {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  padding-left: 8%;
+  font-size: 80%;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 50%;
+}/*# sourceMappingURL=style.css.map */

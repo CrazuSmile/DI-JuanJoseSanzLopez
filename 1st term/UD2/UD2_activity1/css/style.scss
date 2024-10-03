@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap');
+
+body {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+$background: gray;
+
+header {
+
+    background: $background;
+    margin: 0px;
+    padding: 1%;
+
+    h1 {
+        font-weight: 700;
+        font-size: calc(2000px / 1000px * 100%);
+        display: flex;
+        justify-content: center;
+
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: calc(1000px / 1000px * 100%);
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+
+        float: left;
+        width: 10%;
+    }
+
+}
+
+nav {
+    background: $background;
+    padding-left: 8%;
+
+    text-transform: uppercase;
+    font-weight: 400;
+
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        list-style: none;
+    }
+
+    li {
+        padding: 1%;
+
+    }
+
+    a:hover {
+        color: red;
+        font-weight: 700;
+    }
+
+}
+
+section {
+    height: 20em;
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+}
+
+
+footer {
+
+    div {
+        img {
+            width: 3em;
+        }
+
+        background: $background;
+        display: flex;
+        justify-content: center;
+        padding-left: 8%;
+    }
+
+    p {
+        background: $background;
+        display: flex;
+        justify-content: center;
+        padding-left: 8%;
+        font-size: 80%;
+    }
+}
+
+
+h3 {
+    font-weight: 700;
+    font-size: calc(500px / 1000px * 100%);
+}
