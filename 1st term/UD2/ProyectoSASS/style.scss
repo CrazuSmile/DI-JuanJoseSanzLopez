@@ -1,0 +1,12 @@
+@use 'parte1';
+
+$color-principa: green;
+$color-letra: white;
+
+body {
+    background: green;
+}
+
+h1 {
+    color: $color-letra;
+}
