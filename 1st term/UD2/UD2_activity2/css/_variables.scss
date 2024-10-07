@@ -1,0 +1,63 @@
+// VARIABLES SIMPLES ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+$font-sizes: (
+    "cuerpo": 1rem,
+    "h3": 150%,
+    "h2": 200%,
+    "h1": 300%,
+    "nav ul li": 110%,
+    "footer p": 80%
+);
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "bold": 700
+);
+$font-family: "Nunito", sans-serif;
+
+$max-width: 1400px;
+$default-margin: 0;
+$default-padding: 0;
+
+$default-foreground: rgb(30, 30, 30);
+$default-background: #eee;
+
+// VARIABLES COMPUESTAS ////////////////////////////////////////////////////////////////////////////////////////////////
+
+$cuerpo: map-get($font-weights, "regular") map-get($font-sizes, "cuerpo") $font-family;
+
+@mixin font-style-titles {
+    @for $i from 1 through 3 {
+        h#{$i} {
+            font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{$i})) $font-family;
+        }
+    }
+
+}
+
+@mixin horizontal-list-style {
+    li {
+        display: inline-block;
+        margin: $default-margin;
+        padding: 0.2em;
+        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+    }
+}
+
+@mixin random-colors {
+    h1 {
+        color: rgb(random((256)-1), 0, 0);
+    }
+
+    h2 {
+        color: rgb(0, random((256)-1), 0);
+    }
+}
+
+@mixin random-colors-background {
+    @for $i from 1 through 6 {
+        .art#{$i} {
+            background: rgba(random((256)-1), random((256)-1), random((256)-1), 0.5);
+        }
+    }
+}

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+/* ESTILOS GLOBALES ***************************************************************************************************/
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 400 1rem "Nunito", sans-serif;
+  color: rgb(30, 30, 30);
+}
+
+h h1 {
+  font: 700 "Nunito", sans-serif;
+}
+h h2 {
+  font: 700 "Nunito", sans-serif;
+}
+h h3 {
+  font: 700 "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+
+/* HEADER *************************************************************************************************************/
+header {
+  text-align: center;
+  background-color: #eee;
+  padding: 0.5em;
+}
+header h1 {
+  color: rgb(194, 0, 0);
+}
+header h2 {
+  color: rgb(0, 164, 0);
+}
+header img {
+  width: 10%;
+  float: left;
+}
+header h1,
+header h2 {
+  width: 90%;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  header img {
+    float: none;
+  }
+}
+
+/* NAV ****************************************************************************************************************/
+nav {
+  background-color: #eee;
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2em;
+  font: 700 110% "Nunito", sans-serif;
+}
+nav ul a {
+  font-weight: 400;
+}
+nav ul a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+  }
+}
+
+/* SECTION ************************************************************************************************************/
+section {
+  min-height: 20em;
+}
+section .art1 {
+  background: rgba(111, 229, 160, 0.5);
+}
+section .art2 {
+  background: rgba(219, 238, 175, 0.5);
+}
+section .art3 {
+  background: rgba(80, 198, 204, 0.5);
+}
+section .art4 {
+  background: rgba(106, 163, 55, 0.5);
+}
+section .art5 {
+  background: rgba(29, 57, 217, 0.5);
+}
+section .art6 {
+  background: rgba(95, 188, 148, 0.5);
+}
+section article {
+  width: 33%;
+  display: inline-block;
+  height: 250px;
+}
+section article img {
+  width: 25%;
+  float: left;
+}
+section article div {
+  width: 75%;
+  float: right;
+}
+@media (max-width: 992px) {
+  section article {
+    width: 49%;
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  section article {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+/* FOOTER *************************************************************************************************************/
+footer {
+  text-align: center;
+}
+footer div {
+  background-color: #eee;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0 0 0;
+}
+footer div img {
+  width: 3em;
+}
+footer p {
+  background-color: #eee;
+  margin: 0;
+  padding: 0.1em 0;
+  font: 300 80% "Nunito", sans-serif;
+}
+footer p a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

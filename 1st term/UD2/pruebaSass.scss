@@ -1,0 +1,11 @@
+@function color-aleatorio(){
+    $aleatorio: rgb(random(256)-1, random(256)-1, random(256)-1);
+
+
+}
+
+@mixin caja-standard{
+    @for $i from 1 through 3{
+        
+    }
+}

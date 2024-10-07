@@ -1,0 +1,156 @@
+// IMPORTS ************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+@import 'variables';
+
+/* ESTILOS GLOBALES ***************************************************************************************************/
+
+
+html {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+body {
+    font: $cuerpo;
+    color: $default-foreground;
+}
+
+h {
+    @include font-style-titles();
+
+}
+
+a {
+    text-decoration: none;
+    color: $default-foreground;
+}
+
+/* HEADER *************************************************************************************************************/
+
+header {
+    text-align: center;
+    background-color: $default-background;
+    padding: 0.5em;
+    @include random-colors;
+
+    img {
+        width: 10%;
+        float: left;
+    }
+
+    h1,
+    h2 {
+        width: 90%;
+        margin: $default-margin;
+    }
+
+    @media (max-width: 768px) {
+        img{
+            float: none;
+        }
+    }
+
+}
+
+/* NAV ****************************************************************************************************************/
+
+nav {
+    background-color: $default-background;
+    padding: 0.1em;
+    margin: 0.5em 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    ul {
+        list-style: none;
+        margin: $default-margin;
+
+        @include horizontal-list-style;
+
+        a {
+            font-weight: map-get($font-weights, "regular");
+
+            &:hover {
+                text-decoration: underline;
+                font-weight: map-get($font-weights, "bold");
+            }
+        }
+
+        @media (max-width: 768px) {
+            li{
+                display: block;
+            }
+        }
+    }
+}
+
+/* SECTION ************************************************************************************************************/
+
+section {
+    min-height: 20em;
+
+    @include random-colors-background;
+
+    article {
+        width: 33%;
+        display: inline-block;
+
+        height: 250px;
+
+        img {
+            width: 25%;
+            float: left;
+        }
+
+        div {
+            width: 75%;
+            float: right;
+        }
+
+    }
+
+    @media (max-width: 992px) {
+        article {
+            width: 49%;
+            display: inline-block;
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        article {
+            width: 100%;
+            display: inline-block;
+
+        }
+    }
+}
+
+/* FOOTER *************************************************************************************************************/
+
+footer {
+    text-align: center;
+
+    div {
+        background-color: $default-background;
+        margin-bottom: 0.5em;
+        padding: 0.2em 0 0 0;
+
+        img {
+            width: 3em;
+        }
+    }
+
+    p {
+        background-color: $default-background;
+        margin: $default-margin;
+        padding: 0.1em 0;
+        font: map-get($font-weights, "light") map-get($font-sizes, quote(#{&})) $font-family;
+
+        & a:hover {
+            text-decoration: underline;
+            font-weight: map-get($font-weights, "bold");
+        }
+    }
+}
