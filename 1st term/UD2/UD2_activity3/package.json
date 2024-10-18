@@ -1,0 +1,15 @@
+{
+  "name": "ud2-activity-3-basic-bootstrap-layout-crazusmile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^32.2.0"
+  }
+}
