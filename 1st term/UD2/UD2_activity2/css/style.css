@@ -32,10 +32,10 @@ header {
   padding: 0.5em;
 }
 header h1 {
-  color: rgb(202, 0, 0);
+  color: rgb(242, 0, 0);
 }
 header h2 {
-  color: rgb(0, 196, 0);
+  color: rgb(0, 180, 0);
 }
 header img {
   width: 10%;
@@ -88,22 +88,22 @@ section {
   min-height: 20em;
 }
 section .art1 {
-  background: rgba(239, 36, 146, 0.5);
+  background: rgba(136, 4, 244, 0.5);
 }
 section .art2 {
-  background: rgba(62, 62, 161, 0.5);
+  background: rgba(20, 11, 193, 0.5);
 }
 section .art3 {
-  background: rgba(110, 119, 27, 0.5);
+  background: rgba(50, 54, 206, 0.5);
 }
 section .art4 {
-  background: rgba(40, 49, 121, 0.5);
+  background: rgba(230, 173, 220, 0.5);
 }
 section .art5 {
-  background: rgba(30, 121, 88, 0.5);
+  background: rgba(158, 176, 5, 0.5);
 }
 section .art6 {
-  background: rgba(222, 237, 232, 0.5);
+  background: rgba(10, 23, 56, 0.5);
 }
 section article {
   width: 33%;
